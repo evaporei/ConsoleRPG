@@ -16,7 +16,7 @@ public:
 	void endGame();
 	void mainMenu();
 
-	bool isPlaying() const;
+	inline const bool& isPlaying() const { return playing; };
 private:
 	int choice;
 	bool playing;

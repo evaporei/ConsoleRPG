@@ -59,8 +59,3 @@ void Game::endGame()
 {
 	playing = false;
 }
-
-bool Game::isPlaying() const
-{ 
-	return playing;
-}
