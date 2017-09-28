@@ -20,14 +20,14 @@ void Game::mainMenu()
 	bool firstTime = true;
 	do {
 		if (!firstTime)
-			cout << "Choice not found." << endl;
+			std::cout << "Choice not found." << std::endl;
 
-		cout << "MAIN MENU" << endl;
-		cout << "0: Quit" << endl;
-		// cout << "1: Travel" << endl;
-		// cout << "2: Shop" << endl;
-		// cout << "3: Level Up" << endl;
-		// cout << "4: Rest" << endl;
+		std::cout << "MAIN MENU" << std::endl;
+		std::cout << "0: Quit" << std::endl;
+		// std::cout << "1: Travel" << std::endl;
+		// std::cout << "2: Shop" << std::endl;
+		// std::cout << "3: Level Up" << std::endl;
+		// std::cout << "4: Rest" << std::endl;
 
 		choice = readPlayerChoice();
 
@@ -44,9 +44,9 @@ void Game::mainMenu()
 
 int Game::readPlayerChoice()
 {
-	cout << endl << "Choice: ";
+	std::cout << std::endl << "Choice: ";
 	int playerChoice;
-	cin >> playerChoice;
+	std::cin >> playerChoice;
 	return playerChoice;
 }
 
