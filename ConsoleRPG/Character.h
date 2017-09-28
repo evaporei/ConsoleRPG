@@ -10,19 +10,19 @@ public:
 
 	void initialize(int intialLevel, std::string intialName);
 
-	inline const int& getXPosition() const { return xPosition; }
-	inline const int& getYPosition() const { return yPosition; }
+	inline const int& getXPosition() const { return this->xPosition; }
+	inline const int& getYPosition() const { return this->yPosition; }
 
-	inline const std::string& getName() const { return name; }
-	inline const int& getLevel() const { return level; }
-	inline const int& getExperience() const { return experience; }
-	inline const int& getExperienceForNextLevel() const { return experienceForNextLevel; }
-	inline const int& getHealth() const { return health; }
-	inline const int& getMaximumHealth() const { return maximumHealth; }
-	inline const int& getStamina() const { return stamina; }
-	inline const int& getMinimumDamage() const { return minimumDamage; }
-	inline const int& getMaximumDamage() const { return maximumDamage; }
-	inline const int& getDefense() const { return defense;  }
+	inline const std::string& getName() const { return this->name; }
+	inline const int& getLevel() const { return this->level; }
+	inline const int& getExperience() const { return this->experience; }
+	inline const int& getExperienceForNextLevel() const { return this->experienceForNextLevel; }
+	inline const int& getHealth() const { return this->health; }
+	inline const int& getMaximumHealth() const { return this->maximumHealth; }
+	inline const int& getStamina() const { return this->stamina; }
+	inline const int& getMinimumDamage() const { return this->minimumDamage; }
+	inline const int& getMaximumDamage() const { return this->maximumDamage; }
+	inline const int& getDefense() const { return this->defense;  }
 
 private:
 	double xPosition;
