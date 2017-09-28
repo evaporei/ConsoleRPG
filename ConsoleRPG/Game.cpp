@@ -2,7 +2,7 @@
 
 Game::Game()
 {
-	choice = 0;
+	this->choice = 0;
 }
 
 
@@ -12,7 +12,7 @@ Game::~Game()
 
 void Game::start()
 {
-	playing = true;
+	this->playing = true;
 }
 
 void Game::mainMenu()
@@ -29,12 +29,12 @@ void Game::mainMenu()
 		// std::cout << "3: Level Up" << std::endl;
 		// std::cout << "4: Rest" << std::endl;
 
-		choice = readPlayerChoice();
+		this->choice = readPlayerChoice();
 
 		firstTime = false;
-	} while (!isPlayerChoiceValid(choice));
+	} while (!isPlayerChoiceValid(this->choice));
 
-	switch (choice)
+	switch (this->choice)
 	{
 	case 0:
 		endGame();
@@ -52,10 +52,10 @@ int Game::readPlayerChoice()
 
 bool Game::isPlayerChoiceValid(int playerChoice)
 {
-	return playerChoice >= 0 && playerChoice <= numberOfChoices;
+	return playerChoice >= 0 && playerChoice <= this->numberOfChoices;
 }
 
 void Game::endGame()
 {
-	playing = false;
+	this->playing = false;
 }
