@@ -8,7 +8,8 @@ public:
 	Character();
 	virtual ~Character();
 
-	void initialize(int intialLevel, std::string intialName);
+	void initialize(const std::string name);
+	int calculateExperienceForNextLevel(int level);
 
 	inline const int& getXPosition() const { return this->xPosition; }
 	inline const int& getYPosition() const { return this->yPosition; }
