@@ -1,6 +1,8 @@
 #pragma once
 
 #include <string>
+#include <iostream>
+#include <iomanip>
 
 class Character
 {
@@ -9,7 +11,9 @@ public:
 	virtual ~Character();
 
 	void initialize(const std::string name);
-	int calculateExperienceForNextLevel(int level);
+	int calculateExperienceForNextLevel(const int level);
+	void print();
+	void levelUp();
 
 	inline const int& getXPosition() const { return this->xPosition; }
 	inline const int& getYPosition() const { return this->yPosition; }
@@ -36,8 +40,17 @@ private:
 	int health;
 	int maximumHealth;
 	int stamina;
+	int maximumStamina;
 	int minimumDamage;
 	int maximumDamage;
 	int defense;
+
+	int statPoints;
+	int skillPoints;
+
+	int strength;
+	int vitality;
+	int dexterity;
+	int intelligence;
 };
 
