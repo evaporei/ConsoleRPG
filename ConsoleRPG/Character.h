@@ -44,6 +44,7 @@ private:
 	int minimumDamage;
 	int maximumDamage;
 	int defense;
+	int luck;
 
 	int statPoints;
 	int skillPoints;

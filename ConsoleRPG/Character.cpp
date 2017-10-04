@@ -24,6 +24,7 @@ Character::Character()
 	this->minimumDamage = 0;
 	this->maximumDamage = 0;
 	this->defense = 0;
+	this->luck = 0;
 
 	this->statPoints = 0;
 	this->skillPoints = 0;
@@ -64,6 +65,7 @@ void Character::initialize()
 	this->minimumDamage = 1;
 	this->maximumDamage = 4;
 	this->defense = 1;
+	this->luck = 1;
 
 	this->statPoints = 0;
 	this->skillPoints = 0;
@@ -92,6 +94,7 @@ void Character::print()
 	std::cout << "= Stamina: " << this->stamina << " / " << this->maximumStamina << std::endl;
 	std::cout << "= Damage: " << this->minimumDamage << " / " << this->maximumDamage << std::endl;
 	std::cout << "= Defense: " << this->defense << std::endl;
+	std::cout << "= Luck: " << this->luck << std::endl;
 	std::cout << std::endl;
 }
 
