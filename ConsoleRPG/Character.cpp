@@ -79,15 +79,15 @@ void Character::print()
 {
 	std::cout << "= Character Sheet =" << std::endl;
 	std::cout << "= Name: " << this->name << std::endl;
-	std::cout << "= Level: " << this->name << std::endl;
+	std::cout << "= Level: " << this->level << std::endl;
 	std::cout << "= Experience: " << this->experience << std::endl;
 	std::cout << "= Experience to next level: " << this->experienceForNextLevel << std::endl;
-	std::cout << std::setw(10) << std::setfill('=') << std::endl;
+	std::cout << std::endl;
 	std::cout << "= Strength: " << this->strength << std::endl;
 	std::cout << "= Vitality: " << this->vitality << std::endl;
 	std::cout << "= Dexterity: " << this->dexterity << std::endl;
 	std::cout << "= Intelligence: " << this->intelligence << std::endl;
-	std::cout << std::setw(10) << std::setfill('=') << std::endl;
+	std::cout << std::endl;
 	std::cout << "= HP: " << this->health << " / " << this->maximumHealth << std::endl;
 	std::cout << "= Stamina: " << this->stamina << " / " << this->maximumStamina << std::endl;
 	std::cout << "= Damage: " << this->minimumDamage << " / " << this->maximumDamage << std::endl;
