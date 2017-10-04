@@ -10,7 +10,7 @@ public:
 	Character();
 	virtual ~Character();
 
-	void initialize(const std::string name);
+	void initialize();
 	int calculateExperienceForNextLevel(const int level);
 	void print();
 	void levelUp();
@@ -52,5 +52,7 @@ private:
 	int vitality;
 	int dexterity;
 	int intelligence;
+
+	std::string readName();
 };
 

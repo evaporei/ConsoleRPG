@@ -34,12 +34,20 @@ Character::~Character()
 {
 }
 
-void Character::initialize(const std::string name)
+std::string Character::readName()
+{
+	std::string name = "";
+	std::cout << "Enter name for character: ";
+	std::getline(std::cin, name);
+	return name;
+}
+
+void Character::initialize()
 {
 	this->xPosition = 0.0;
 	this->yPosition = 0.0;
 
-	this->name = name;
+	this->name = this->readName();
 	this->level = 1;
 	this->experience = 0;
 	this->experienceForNextLevel = this->calculateExperienceForNextLevel(this->level);
