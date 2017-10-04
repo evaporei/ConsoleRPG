@@ -84,6 +84,7 @@ void Character::print()
 	std::cout << "= Stamina: " << this->stamina << " / " << this->maximumStamina << std::endl;
 	std::cout << "= Damage: " << this->minimumDamage << " / " << this->maximumDamage << std::endl;
 	std::cout << "= Defense: " << this->defense << std::endl;
+	std::cout << std::endl;
 }
 
 void Character::levelUp()
