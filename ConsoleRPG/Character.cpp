@@ -76,6 +76,22 @@ int Character::calculateExperienceForNextLevel(const int level)
 	return static_cast<int>((50 / 3) * (pow(level, 3) - 6 * pow(level, 2) + (17 * level) - 12)) + 100;
 }
 
+std::string Character::getAsString() const
+{
+	return std::to_string(this->xPosition) + " "
+		+ std::to_string(this->yPosition) + " "
+		+ this->name + " "
+		+ std::to_string(this->level) + " "
+		+ std::to_string(this->experience) + " "
+		+ std::to_string(this->strength) + " "
+		+ std::to_string(this->vitality) + " "
+		+ std::to_string(this->dexterity) + " "
+		+ std::to_string(this->intelligence) + " "
+		+ std::to_string(this->health) + " "
+		+ std::to_string(this->stamina) + " "
+		+ std::to_string(this->statPoints) + " "
+		+ std::to_string(this->skillPoints);
+}
 
 void Character::print()
 {

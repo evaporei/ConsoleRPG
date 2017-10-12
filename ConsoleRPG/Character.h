@@ -13,6 +13,7 @@ public:
 	void initialize();
 	int calculateExperienceForNextLevel(const int level);
 	void print();
+	std::string getAsString() const;
 	void levelUp();
 
 	inline const int& getXPosition() const { return this->xPosition; }
