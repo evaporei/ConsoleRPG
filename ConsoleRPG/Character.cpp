@@ -73,7 +73,7 @@ void Character::initialize()
 
 int Character::calculateExperienceForNextLevel(const int level)
 {
-	return (50 / 3) * (pow(level, 3) - 6 * pow(level, 3) + (17 * level) - 11);
+	return static_cast<int>((50 / 3) * (pow(level, 3) - 6 * pow(level, 2) + (17 * level) - 12)) + 100;
 }
 
 
