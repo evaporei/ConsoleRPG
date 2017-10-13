@@ -58,14 +58,14 @@ void Character::initialize()
 	this->dexterity = 5;
 	this->intelligence = 5;
 
-	this->health = 10;
-	this->maximumHealth = 10;
-	this->stamina = 10;
-	this->maximumStamina = 10;
-	this->minimumDamage = 1;
-	this->maximumDamage = 4;
-	this->defense = 1;
-	this->luck = 1;
+	this->maximumHealth = (this->vitality * 2) + (this->strength / 2);
+	this->health = this->maximumHealth;
+	this->maximumStamina = this->vitality + (this->strength / 2) + (this->dexterity / 3);
+	this->stamina = this->maximumStamina;
+	this->minimumDamage = this->strength;
+	this->maximumDamage = this->strength + 2;
+	this->defense = this->dexterity + (this->intelligence / 2);
+	this->luck = this->intelligence;
 
 	this->statPoints = 0;
 	this->skillPoints = 0;
