@@ -1,10 +1,16 @@
 #pragma once
+#include <string>
 #include "Item.h"
 class Weapon :
 	public Item
 {
+private:
+	int minimumDamage;
+	int maximumDamage;
 public:
-	Weapon();
+	Weapon(int minimumDamage, int maximumDamage, std::string name, int level, int buyValue, int sellValue, int rarity);
 	~Weapon();
+
+	std::string getAsString();
 };
 
