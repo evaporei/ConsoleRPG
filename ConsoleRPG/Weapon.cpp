@@ -1,7 +1,7 @@
 #include "Weapon.h"
 
 
-Weapon::Weapon(int minimumDamage = 0, int maximumDamage = 0, std::string name = "NONE", int level = 0, int buyValue = 0, int sellValue = 0, int rarity = 0) : Item(name, level, buyValue, sellValue, rarity)
+Weapon::Weapon(int minimumDamage, int maximumDamage, std::string name, int level, int buyValue, int sellValue, int rarity) : Item(name, level, buyValue, sellValue, rarity)
 {
 	this->minimumDamage = minimumDamage;
 	this->maximumDamage = maximumDamage;

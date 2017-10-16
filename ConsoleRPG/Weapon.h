@@ -8,7 +8,7 @@ private:
 	int minimumDamage;
 	int maximumDamage;
 public:
-	Weapon(int minimumDamage, int maximumDamage, std::string name, int level, int buyValue, int sellValue, int rarity);
+	Weapon(int minimumDamage = 0, int maximumDamage = 0, std::string name = "NONE", int level = 0, int buyValue = 0, int sellValue = 0, int rarity = 0);
 	~Weapon();
 
 	virtual Weapon* clone() const;
