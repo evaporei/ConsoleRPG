@@ -3,6 +3,9 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include "Inventory.h"
+#include "Weapon.h"
+#include "Armor.h"
 
 class Character
 {
@@ -33,6 +36,10 @@ public:
 private:
 	double xPosition;
 	double yPosition;
+
+	Inventory inventory;
+	Weapon weapon;
+	Armor armor;
 
 	std::string name;
 	int level;
