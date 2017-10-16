@@ -1,6 +1,6 @@
 #include "Armor.h"
 
-Armor::Armor(int type = 0, int defense = 0, std::string name = "NONE", int level = 0, int buyValue = 0, int sellValue = 0, int rarity = 0) : Item(name, level, buyValue, sellValue, rarity)
+Armor::Armor(int type, int defense, std::string name, int level, int buyValue, int sellValue, int rarity) : Item(name, level, buyValue, sellValue, rarity)
 {
 	this->type = type;
 	this->defense = defense;
