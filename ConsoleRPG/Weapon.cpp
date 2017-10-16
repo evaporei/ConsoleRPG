@@ -11,6 +11,11 @@ Weapon::~Weapon()
 {
 }
 
+Weapon* Weapon::clone() const
+{
+	return new Weapon(*this);
+}
+
 std::string Weapon::getAsString()
 {
 	return std::to_string(this->minimumDamage) + " " + std::to_string(this->maximumDamage);

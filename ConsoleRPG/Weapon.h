@@ -11,6 +11,8 @@ public:
 	Weapon(int minimumDamage, int maximumDamage, std::string name, int level, int buyValue, int sellValue, int rarity);
 	~Weapon();
 
+	virtual Weapon* clone() const;
+
 	std::string getAsString();
 };
 

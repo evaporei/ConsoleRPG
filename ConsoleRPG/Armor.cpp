@@ -10,6 +10,11 @@ Armor::~Armor()
 {
 }
 
+Armor* Armor::clone() const
+{
+	return new Armor(*this);
+}
+
 std::string Armor::getAsString()
 {
 	return std::to_string(this->type) + " " + std::to_string(this->defense);
